@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  height: stretch;
+  overflow-y: auto;
+  padding: 16px;
+}
+.footer {
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  padding: 16px;
+  text-align: start;
+}
+.footer p {
+  margin: 0;
+}
