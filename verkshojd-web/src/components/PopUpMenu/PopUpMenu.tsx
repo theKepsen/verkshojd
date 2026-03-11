@@ -36,7 +36,11 @@ export const PopUpMenu: React.FC<PopUpMenuProps> = ({
       <div className={styles.menuButton} onClick={toggleMenu}>
         {buttonContent}
       </div>
-      {isOpen && <div className={styles.menuContent}>{menuContent}</div>}
+      {isOpen && (
+        <div onClick={toggleMenu} className={styles.menuContent}>
+          {menuContent}
+        </div>
+      )}
     </div>
   );
 };

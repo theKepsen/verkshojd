@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import { DropDownMenu } from "./DropDownMenu/DropDownMenu";
 
 export const Header = () => {
   return (
@@ -9,9 +10,9 @@ export const Header = () => {
         <Link to="/">Home</Link>
         <Link to="/log">Log</Link>
       </span>
-      <h1 style={{ color: "transparent", userSelect: "none" }}>
-        Verkshojd Studios
-      </h1>
+      <span>
+        <DropDownMenu />
+      </span>
     </div>
   );
 };

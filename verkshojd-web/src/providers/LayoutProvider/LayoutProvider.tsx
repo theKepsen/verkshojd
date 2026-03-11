@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { Header } from "./components/Header";
+import { Header } from "./components/Header/Header";
 import { Outlet } from "react-router-dom";
 import styles from "./LayoutProvider.module.css";
 import { TestModal } from "../../components/modal/TestModal/TestModal";
