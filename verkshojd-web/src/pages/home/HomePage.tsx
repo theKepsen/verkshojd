@@ -12,7 +12,10 @@ export const HomePage = () => {
     <HomePageProvider>
       <h1>{text}</h1>
       <p>{test}</p>
-      <div className="imageContainer">
+      <div
+        className="imageContainer"
+        style={{ width: "500px", margin: "0 auto" }}
+      >
         <img src={img} alt="Verkshojd Logo" />
       </div>
       <span className="veryImportantInformation">
