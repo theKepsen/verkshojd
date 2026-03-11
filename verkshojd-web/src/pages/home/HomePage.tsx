@@ -1,8 +1,14 @@
+import {
+  HomePageProvider,
+  useHomePageContext,
+} from "./provider/HomePageProvider";
+
 export const HomePage = () => {
+  const { text } = useHomePageContext();
   return (
-    <>
-      <h1>Himla bra ord ju!</h1>
+    <HomePageProvider>
+      <h1>{text}</h1>
       <p></p>
-    </>
+    </HomePageProvider>
   );
 };

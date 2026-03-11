@@ -1,9 +1,10 @@
-import { createHashRouter } from "react-router";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./pages/home/HomePage";
 import { LogPage } from "./pages/log/LogPage";
 import { LayoutProvider } from "./providers/LayoutProvider/LayoutProvider";
+import type React from "react";
 
-export const router = createHashRouter([
+const router = createHashRouter([
   {
     Component: LayoutProvider,
     children: [
@@ -18,3 +19,8 @@ export const router = createHashRouter([
     ],
   },
 ]);
+
+interface RoutesProps {}
+export const AppRoutes: React.FC<RoutesProps> = () => {
+  return <RouterProvider router={router} />;
+};

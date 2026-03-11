@@ -1,8 +1,32 @@
 .header {
   display: flex;
-  padding: 16px;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  justify-content: space-between;
 }
 .header h1 {
   margin: 0;
   font-size: 24px;
+  white-space: nowrap;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  padding: 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+.links a:hover {
+  border: 1px solid #fff;
 }
