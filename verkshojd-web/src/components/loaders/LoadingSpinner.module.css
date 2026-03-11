@@ -1,0 +1,28 @@
+@keyframes loadingSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinLoader {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  animation: loadingSpin 1.1s linear infinite;
+}
+
+.loadingText {
+  margin-left: 6px;
+  font-size: 13px;
+  color: #8c8884;
+}

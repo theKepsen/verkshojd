@@ -1,0 +1,36 @@
+/* button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+.button {
+  border-radius: 4px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  color: var(--main-black);
+  background-color: var(--main-white);
+  border: 1px solid #d7d2cb;
+}
+
+.buttonPrimary {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
