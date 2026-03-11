@@ -3,6 +3,7 @@ import {
   HomePageProvider,
   useHomePageContext,
 } from "./provider/HomePageProvider";
+import img from "/verkshojden.png";
 
 export const HomePage = () => {
   const { text } = useHomePageContext();
@@ -11,6 +12,9 @@ export const HomePage = () => {
     <HomePageProvider>
       <h1>{text}</h1>
       <p>{test}</p>
+      <div className="imageContainer">
+        <img src={img} alt="Verkshojd Logo" />
+      </div>
       <span className="veryImportantInformation">
         This is some very important information that should be highlighted.
       </span>
