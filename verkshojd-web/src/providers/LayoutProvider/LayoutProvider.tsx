@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import { Outlet } from "react-router-dom";
 import styles from "./LayoutProvider.module.css";
 import { TestModal } from "../../components/modal/TestModal/TestModal";
+import { YoutubeLinkIcon } from "../../icons/YoutubeLinkIcon";
 
 const LayoutContext = createContext<{
   openTestModal: () => void;
@@ -35,6 +36,15 @@ export const LayoutProvider = () => {
 
         <div className={styles.footer}>
           <p>Verkshöjd Studios</p>
+
+          <a
+            href="https://www.youtube.com/@verkshojd"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "flex", marginLeft: "auto" }}
+          >
+            <YoutubeLinkIcon height={18} />
+          </a>
         </div>
       </div>
       {testModalOpen && <TestModal />}
