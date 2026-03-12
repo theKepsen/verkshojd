@@ -14,6 +14,7 @@ export const GamesPage = () => {
             description={game.description}
             link={game.link}
             imageSrc={game.imageSrc}
+            state={game.state}
           />
         ))}
       </div>

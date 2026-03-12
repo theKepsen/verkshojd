@@ -22,6 +22,19 @@
 }
 .cardLink p {
   margin: 16px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: start;
+  font-size: 14px;
+}
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-top: -16px;
+  margin-right: 8px;
 }
 
 .imageContainer {

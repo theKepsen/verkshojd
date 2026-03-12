@@ -6,6 +6,7 @@ interface GameData {
   imageSrc: string;
   link: string;
   id: string;
+  state: string;
 }
 
 export const gamesData: GameData[] = [
@@ -16,5 +17,6 @@ export const gamesData: GameData[] = [
     imageSrc: image,
     link: "/games/gdsa",
     id: "gdsa",
+    state: "In Development",
   },
 ];

@@ -34,7 +34,7 @@ export const LayoutProvider = () => {
         </div>
 
         <div className={styles.footer}>
-          <p>Verkshojd Studios</p>
+          <p>Verkshöjd Studios</p>
         </div>
       </div>
       {testModalOpen && <TestModal />}

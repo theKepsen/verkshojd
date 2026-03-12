@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 16px;
 }
+.container h1 {
+  margin-bottom: 0;
+}
 
 .gamesGrid {
   display: grid;
