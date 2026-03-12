@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { PopUpMenu } from "../../../../../components/PopUpMenu/PopUpMenu";
 import { HamburgerMenuIcon } from "../../../../../icons/HamburgerMenuIcon";
+import styles from "./DropDownMenu.module.css";
 
 const MenuButton = () => {
   return (
-    <div style={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+    <div className={styles.menuButton}>
       <HamburgerMenuIcon />
     </div>
   );
@@ -12,19 +13,7 @@ const MenuButton = () => {
 
 const MenuContent = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "4px",
-        backgroundColor: "#242424",
-        borderRadius: "4px",
-        border: "1px solid rgba(255, 255, 255, 0.295)",
-        padding: "16px",
-        textAlign: "start",
-        color: "var(--main-white)",
-      }}
-    >
+    <div className={styles.menuContent}>
       <Link to="/">Home</Link>
 
       <Link to="/games">Games</Link>

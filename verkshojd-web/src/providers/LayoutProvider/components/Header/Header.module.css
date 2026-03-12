@@ -23,14 +23,15 @@
 .links a {
   text-decoration: none;
   font-weight: bold;
-  border: 1px solid rgba(255, 255, 255, 0.295);
+  border: 1px solid transparent;
   padding: 8px;
   border-radius: 4px;
   color: var(--main-white);
 }
 
 .links a:hover {
-  border: 1px solid var(--main-white);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Optional: align the dropdown to the right */
