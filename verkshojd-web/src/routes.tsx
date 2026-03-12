@@ -3,6 +3,8 @@ import { HomePage } from "./pages/home/HomePage";
 import { LogPage } from "./pages/log/LogPage";
 import { LayoutProvider } from "./providers/LayoutProvider/LayoutProvider";
 import type React from "react";
+import { GamesPage } from "./pages/games/GamesPage";
+import { GDSAPage } from "./pages/games/childPages/gdsa/GDSAPage";
 
 const router = createHashRouter([
   {
@@ -15,6 +17,14 @@ const router = createHashRouter([
       {
         path: "/log",
         Component: LogPage,
+      },
+      {
+        path: "/games",
+        Component: GamesPage,
+      },
+      {
+        path: "/games/gdsa",
+        Component: GDSAPage,
       },
     ],
   },

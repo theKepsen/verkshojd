@@ -4,7 +4,7 @@ import { HamburgerMenuIcon } from "../../../../../icons/HamburgerMenuIcon";
 
 const MenuButton = () => {
   return (
-    <div>
+    <div style={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
       <HamburgerMenuIcon />
     </div>
   );
@@ -20,10 +20,14 @@ const MenuContent = () => {
         backgroundColor: "#242424",
         borderRadius: "4px",
         border: "1px solid rgba(255, 255, 255, 0.295)",
-        padding: "8px",
+        padding: "16px",
+        textAlign: "start",
+        color: "var(--main-white)",
       }}
     >
       <Link to="/">Home</Link>
+
+      <Link to="/games">Games</Link>
       <Link to="/log">Log</Link>
     </div>
   );

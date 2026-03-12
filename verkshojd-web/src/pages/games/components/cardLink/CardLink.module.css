@@ -1,0 +1,31 @@
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  max-width: 320px;
+  margin: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 0 1px 0 rgba(0, 0, 0, 0.2),
+    0 0 2px 0 rgba(0, 0, 0, 0.05),
+    0 15px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.cardLink:hover {
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.cardLink p {
+  margin: 16px;
+}
+
+.imageContainer {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}

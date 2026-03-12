@@ -26,11 +26,11 @@
   border: 1px solid rgba(255, 255, 255, 0.295);
   padding: 8px;
   border-radius: 4px;
-  color: #fff;
+  color: var(--main-white);
 }
 
 .links a:hover {
-  border: 1px solid #fff;
+  border: 1px solid var(--main-white);
 }
 
 /* Optional: align the dropdown to the right */

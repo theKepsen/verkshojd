@@ -1,4 +1,4 @@
-import { useMainState } from "../../providers/MainStateProvider/MainStateProvider";
+//import { useMainState } from "../../providers/MainStateProvider/MainStateProvider";
 import {
   HomePageProvider,
   useHomePageContext,
@@ -7,14 +7,14 @@ import img from "/verkshojden.png";
 
 export const HomePage = () => {
   const { text } = useHomePageContext();
-  const { test } = useMainState();
+  //const { test } = useMainState();
   return (
     <HomePageProvider>
       <h1>{text}</h1>
-      <p>{test}</p>
+      {/* <p>{test}</p> */}
       <div
         className="imageContainer"
-        style={{ width: "500px", margin: "0 auto" }}
+        style={{ width: "500px", maxHeight: "70%", margin: "0 auto" }}
       >
         <img src={img} alt="Verkshojd Logo" />
       </div>

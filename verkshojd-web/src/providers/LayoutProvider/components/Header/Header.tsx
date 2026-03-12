@@ -8,6 +8,7 @@ export const Header = () => {
       <h1>Verkshojd Studios</h1>
       <span className={styles.links}>
         <Link to="/">Home</Link>
+        <Link to="/games">Games</Link>
         <Link to="/log">Log</Link>
       </span>
       <span>

@@ -12,11 +12,11 @@
 }
 
 .content {
-  background-color: #fff;
+  background-color: #242424;
   padding: 16px;
   border-radius: 8px;
   position: relative;
-  color: #000;
+  color: var(--main-white);
 }
 
 .closeButton {
