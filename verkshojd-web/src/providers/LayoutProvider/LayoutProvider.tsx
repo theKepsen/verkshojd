@@ -3,18 +3,24 @@ import { Header } from "./components/Header/Header";
 import { Outlet } from "react-router-dom";
 import styles from "./LayoutProvider.module.css";
 import { TestModal } from "../../components/modal/TestModal/TestModal";
-import { YoutubeLinkIcon } from "../../icons/YoutubeLinkIcon";
+import { Footer } from "./components/Footer/Footer";
+import { ImageModal } from "../../components/modal/ImageModal/ImageModal";
 
 const LayoutContext = createContext<{
   openTestModal: () => void;
   closeTestModal: () => void;
+  openImageModal: (imageSrc: string) => void;
+  closeImageModal: () => void;
 }>({
   openTestModal: () => {},
   closeTestModal: () => {},
+  openImageModal: () => {},
+  closeImageModal: () => {},
 });
 
 export const LayoutProvider = () => {
   const [testModalOpen, setTestModalOpen] = useState(false);
+  const [imageModalOpen, setImageModalOpen] = useState<string | null>(null);
 
   const openTestModal = () => {
     setTestModalOpen(true);
@@ -22,9 +28,16 @@ export const LayoutProvider = () => {
   const closeTestModal = () => {
     setTestModalOpen(false);
   };
-
+  const openImageModal = (imageSrc: string) => {
+    setImageModalOpen(imageSrc);
+  };
+  const closeImageModal = () => {
+    setImageModalOpen(null);
+  };
   return (
-    <LayoutContext.Provider value={{ openTestModal, closeTestModal }}>
+    <LayoutContext.Provider
+      value={{ openTestModal, closeTestModal, openImageModal, closeImageModal }}
+    >
       <div className={styles.container}>
         <div className={styles.header}>
           <Header />
@@ -34,20 +47,10 @@ export const LayoutProvider = () => {
           <Outlet />
         </div>
 
-        <div className={styles.footer}>
-          <p>Verkshöjd Studios</p>
-
-          <a
-            href="https://www.youtube.com/@verkshojd"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: "flex", marginLeft: "auto" }}
-          >
-            <YoutubeLinkIcon height={18} />
-          </a>
-        </div>
+        <Footer />
       </div>
       {testModalOpen && <TestModal />}
+      {imageModalOpen && <ImageModal imageSrc={imageModalOpen} />}
     </LayoutContext.Provider>
   );
 };
