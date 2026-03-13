@@ -1,19 +1,22 @@
 import styles from "./GDSALogPage.module.css";
 import Markdown from "react-markdown";
-import { DemoTasksMd } from "./tasks/demoMd";
+import { DemoTasksArtMd, DemoTasksMd } from "./mdData/demoMd";
 import { useState } from "react";
-import { ReleasesMd, UpcomingReleasesMd } from "./tasks/releasesMd";
+import { ReleasesMd, UpcomingReleasesMd } from "./mdData/releasesMd";
 import { Link } from "react-router-dom";
+import { projectArtMd, projectMd } from "./mdData/projectMd";
 
 export const GDSALogPage = () => {
-  const [view, setView] = useState<"demo" | "releases">("demo");
+  const [view, setView] = useState<"demo" | "releases" | "project">("releases");
 
   const getMdContent = () => {
     switch (view) {
       case "demo":
-        return [DemoTasksMd];
+        return [DemoTasksMd, DemoTasksArtMd];
       case "releases":
         return [ReleasesMd, UpcomingReleasesMd];
+      case "project":
+        return [projectMd, projectArtMd];
       default:
         return [""];
     }
@@ -25,21 +28,25 @@ export const GDSALogPage = () => {
     <div className={styles.container}>
       <div className={styles.nav}>
         <span
+          className={view === "releases" ? styles.active : ""}
+          onClick={() => setView("releases")}
+        >
+          Releases
+        </span>
+        <span
           className={view === "demo" ? styles.active : ""}
           onClick={() => setView("demo")}
         >
           Demo Tasks
         </span>
         <span
-          className={view === "releases" ? styles.active : ""}
-          onClick={() => setView("releases")}
+          className={view === "project" ? styles.active : ""}
+          onClick={() => setView("project")}
         >
-          Releases
+          Project Tasks
         </span>
-        <Link to="/games/gdsa">Back to Game</Link>
+        <Link to="/games/gdsa">Game Page</Link>
       </div>
-
-      <h3>{view === "demo" ? "Demo Tasks" : "Releases"}</h3>
 
       {content.length > 0 && (
         <div className={styles.mdContainer}>

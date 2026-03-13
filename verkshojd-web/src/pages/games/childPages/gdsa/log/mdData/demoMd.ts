@@ -140,6 +140,12 @@ export const DemoTasksMd = `
 - [ ] Rank System
   - [ ] Boss HP
 
+
+`;
+
+export const DemoTasksArtMd = `
+## Visuals and Sound
+
 ### **[ ] Game Object Art** 🎨
 
 - [ ] Assets Resolution Rules

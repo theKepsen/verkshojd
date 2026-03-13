@@ -1,27 +1,28 @@
 export const UpcomingReleasesMd = `
 ### In Progress
 
-- **[ ] Alpha 0.7**
+**Alpha 0.7** : _Planned Mar 22th 2026_
   - [ ] Level C Update
   - [✅] Yellow Enemy Update
   - [✅] Boss Time Cap (2 min)
   - [✅] Obstacle Art Versions
   - [ ] Bullet Pattern Updates
-  - [ ] ...
   - [✅] Level A Background Concept
   - [✅] Gamepad Connection Sound
   - ? _[ ] Player hit animation_
   - ? _[ ] Level C Background Concept?_
+  - [ ] ...
 
 ### Planned
 
-- **[ ] Alpha 0.7.1**
+**Alpha 0.7.1** : _Planned TBD_
   - ? _[ ] Level C Background Concept?_
   - [ ] Level C Improvements
   - [ ] Select Boss for Demo
   - [ ] Snake Rework
   - [ ] ...
-- **[ ] Alpha 0.8**
+
+ **Alpha 0.8** : _Planned TBD_
   - [ ] Scoring System
   - [ ] ...
 `;
