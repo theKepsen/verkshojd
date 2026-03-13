@@ -18,10 +18,10 @@
   text-decoration: none;
   color: var(--main-white);
   font-weight: bold;
-  border: rgba(255, 255, 255, 0.1) solid 1px;
-  border-radius: 4px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   padding: 8px;
 }
 .menuContent a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--main-white);
 }
