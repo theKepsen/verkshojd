@@ -1,0 +1,52 @@
+/* @keyframes slide-left {
+  25%,
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 200%;
+    color: magenta;
+  }
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+}
+.fanty {
+  padding-top: 100px;
+  animation-duration: 3s;
+  animation-name: slide-in;
+  width: 50%;
+  display: flex;
+}
+.info {
+  animation-duration: 4s;
+  animation-name: fade-in;
+  opacity: 1;
+}
+
+@keyframes slide-in {
+  from {
+    translate: -100vw 0;
+  }
+
+  to {
+    translate: 0 0;
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
