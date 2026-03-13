@@ -15,9 +15,7 @@ const MenuContent = () => {
   return (
     <div className={styles.menuContent}>
       <Link to="/">Home</Link>
-
       <Link to="/games">Games</Link>
-      <Link to="/log">Log</Link>
     </div>
   );
 };

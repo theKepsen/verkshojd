@@ -21,12 +21,6 @@ export const Header = () => {
         >
           Games
         </Link>
-        <Link
-          className={location.pathname === "/log" ? styles.active : ""}
-          to="/log"
-        >
-          Log
-        </Link>
       </span>
       <span>
         <DropDownMenu />
