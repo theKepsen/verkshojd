@@ -2,17 +2,19 @@ import { Link } from "react-router-dom";
 import { PopUpImage } from "../../../../components/PopUpImage/PopUpImage";
 import styles from "./GDSAPage.module.css";
 import image1 from "/gdsa.png";
+import { useMediaQuery } from "../../../../hooks/mediaQuery";
 
 export const GDSAPage = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <div className={styles.container}>
       <h1>Gosh Darn Space Aliens</h1>
       <PopUpImage
         containerStyle={{
-          height: "340px",
+          height: isMobile ? "200px" : "340px",
           position: "absolute",
-          top: "84px",
-          left: "28px",
+          top: isMobile ? "108px" : "84px",
+          left: isMobile ? "8px" : "28px",
           zIndex: 0,
         }}
         imageStyle={{ borderRadius: "8px" }}

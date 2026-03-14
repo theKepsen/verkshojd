@@ -8,11 +8,14 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
   padding: 16px;
   text-align: start;
   color: var(--main-white);
+  position: fixed;
+  top: 52px;
+  right: 16px;
 }
 .menuContent a {
   text-decoration: none;

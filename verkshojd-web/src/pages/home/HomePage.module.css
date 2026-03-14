@@ -16,6 +16,8 @@
 }
 .content {
   display: flex;
+  flex-direction: row;
+  position: relative;
 }
 .fanty {
   padding-top: 100px;
@@ -23,11 +25,24 @@
   animation-name: slide-in;
   width: 50%;
   display: flex;
+  position: absolute;
+  top: 150px;
+  left: 15%;
+  height: 500px;
+}
+.fanty h1 {
+  position: absolute;
+  right: 40px;
+  bottom: 180px;
 }
 .info {
   animation-duration: 4s;
   animation-name: fade-in;
   opacity: 1;
+  position: absolute;
+  top: 24px;
+  left: 52%;
+  z-index: 2;
 }
 
 @keyframes slide-in {
@@ -48,5 +63,24 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .fanty h1 {
+    right: -40%;
+    bottom: 196px;
+    font-size: 32px;
+  }
+  .fanty {
+    left: 16px;
+    top: 16px;
+    width: 45%;
+  }
+  .info {
+    right: 16px;
+    top: 30px;
+    left: unset;
+    width: 60%;
   }
 }

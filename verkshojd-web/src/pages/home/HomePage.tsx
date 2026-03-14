@@ -11,19 +11,6 @@ export const HomePage = () => {
     <HomePageProvider>
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.fanty}>
-            <PopUpImage
-              containerStyle={{
-                width: "500px",
-                maxHeight: "70%",
-                margin: "0",
-                marginTop: "48px",
-                marginLeft: "25%",
-              }}
-              imageSrc={img}
-              altText="Verkshojd Logo"
-            />
-          </div>
           <div className={styles.info}>
             {gamesData.map((game) => (
               <CardLink
@@ -35,7 +22,19 @@ export const HomePage = () => {
                 state={game.state}
               />
             ))}
-            <span>Hey! Check out this cool game!</span>
+            <span>Check out this cool game!</span>
+          </div>
+
+          <div className={styles.fanty}>
+            <PopUpImage
+              containerStyle={{
+                width: "100%",
+                maxHeight: "100%",
+              }}
+              imageSrc={img}
+              altText="Verkshojd Logo"
+            />
+            <h1>{"< HEY!"}</h1>
           </div>
         </div>
         <span className="veryImportantInformation">

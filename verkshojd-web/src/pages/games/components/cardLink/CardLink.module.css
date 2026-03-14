@@ -42,3 +42,13 @@
   overflow: hidden;
   border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  .cardLink {
+    margin: 0;
+    max-width: none;
+  }
+  .cardLink h2 {
+    font-size: 18px;
+  }
+}

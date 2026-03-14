@@ -5,9 +5,11 @@ import { useState } from "react";
 import { ReleasesMd, UpcomingReleasesMd } from "./mdData/releasesMd";
 import { Link } from "react-router-dom";
 import { projectArtMd, projectMd } from "./mdData/projectMd";
+import { useMediaQuery } from "../../../../../hooks/mediaQuery";
 
 export const GDSALogPage = () => {
   const [view, setView] = useState<"demo" | "releases" | "project">("releases");
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   const getMdContent = () => {
     switch (view) {
@@ -55,9 +57,9 @@ export const GDSALogPage = () => {
               key={index}
               style={{
                 textAlign: "start",
-                width: `${Math.floor(100 / content.length)}%`,
+                width: `${!isMobile ? Math.floor(100 / content.length) : 100}%`,
                 borderRight:
-                  content.length !== index + 1
+                  content.length !== index + 1 && !isMobile
                     ? "1px solid rgba(255, 255, 255, 0.2)"
                     : "none",
                 padding: "0 16px",

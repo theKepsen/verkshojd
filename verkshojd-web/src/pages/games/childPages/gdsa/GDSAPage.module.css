@@ -101,3 +101,23 @@
   background-color: #fa5c5cc2;
   color: var(--main-white);
 }
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 24px;
+  }
+  .container h2 {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .description {
+    width: 80%;
+    right: 8px;
+    top: 324px;
+  }
+  .statusContainer {
+    flex-direction: row-reverse;
+    top: 58px;
+    gap: 12px;
+  }
+}

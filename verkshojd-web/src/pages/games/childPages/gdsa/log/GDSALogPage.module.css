@@ -40,3 +40,10 @@
   justify-content: space-between;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .mdContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
