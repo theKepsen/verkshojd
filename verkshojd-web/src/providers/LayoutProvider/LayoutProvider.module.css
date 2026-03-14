@@ -19,6 +19,6 @@
   flex-direction: column;
   gap: 8px;
   /* border: 1px solid rgba(255, 255, 255, 0.295); */
-  height: stretch;
+  height: auto;
   overflow-y: auto;
 }
