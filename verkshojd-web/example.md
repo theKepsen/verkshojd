@@ -63,3 +63,9 @@ const func = () => {
   }, 3000);
 };
 ```
+
+### favicon
+
+```html
+<link href=".png" rel="icon" type="image/png" />
+```
