@@ -10,6 +10,7 @@
 }
 
 .container h1 {
+  font-family: var(--HeaderFont);
   font-size: 32px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 8px 16px;
@@ -84,6 +85,10 @@
   margin-top: 0;
   text-align: start;
   white-space: pre-line;
+}
+.description h3 {
+  font-family: var(--HeaderFont);
+  font-size: 24px;
 }
 .itchLink {
   background-color: #fa5c5c;

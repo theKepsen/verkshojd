@@ -34,6 +34,7 @@
   position: absolute;
   right: 40px;
   bottom: 180px;
+  font-family: var(--HeaderFont);
 }
 .info {
   animation-duration: 4s;
@@ -43,6 +44,13 @@
   top: 24px;
   left: 52%;
   z-index: 2;
+}
+.infoText {
+  font-family: var(--HeaderFont);
+  text-align: end;
+  font-size: 24px;
+  display: flex;
+  justify-content: end;
 }
 
 @keyframes slide-in {
@@ -82,5 +90,8 @@
     top: 30px;
     left: unset;
     width: 60%;
+  }
+  .infoText {
+    font-size: 18px;
   }
 }

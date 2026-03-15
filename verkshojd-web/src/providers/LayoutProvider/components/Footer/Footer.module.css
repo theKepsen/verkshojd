@@ -4,17 +4,33 @@
   text-align: start;
   display: flex;
   align-items: center;
+  gap: 16px;
 }
 .footer p {
   margin: 0;
 }
-.footer .youtubeLink {
-  display: flex;
+
+.footer .itchLink {
   margin-left: auto;
+}
+
+.footer .youtubeLink,
+.footer .itchLink {
+  display: flex;
+  /* margin-left: auto; */
   border: 1px solid transparent;
   padding: 8px;
   border-radius: 8px;
+  width: fit-content;
 }
-.footer .youtubeLink:hover {
+.footer .youtubeLink:hover,
+.footer .itchLink:hover {
   border-bottom: 1px solid var(--main-white);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 8px;
+    gap: 8px;
+  }
 }

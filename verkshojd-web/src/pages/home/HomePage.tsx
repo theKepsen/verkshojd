@@ -22,7 +22,7 @@ export const HomePage = () => {
                 state={game.state}
               />
             ))}
-            <span>Check out this cool game!</span>
+            <span className={styles.infoText}>Check this cool game out!</span>
           </div>
 
           <div className={styles.fanty}>

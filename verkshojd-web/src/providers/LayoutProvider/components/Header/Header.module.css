@@ -7,10 +7,12 @@
 }
 
 .header h1 {
+  font-family: var(--HeaderFont);
   margin: 0;
   font-size: 24px;
   white-space: nowrap;
   text-align: start;
+  cursor: pointer;
 }
 
 .links {

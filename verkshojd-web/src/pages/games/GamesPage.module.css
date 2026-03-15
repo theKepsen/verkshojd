@@ -5,6 +5,7 @@
 }
 .container h1 {
   margin-bottom: 0;
+  font-family: var(--HeaderFont);
 }
 
 .gamesGrid {

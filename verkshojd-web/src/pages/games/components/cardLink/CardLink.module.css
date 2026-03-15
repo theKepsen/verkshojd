@@ -36,6 +36,9 @@
   margin-top: -16px;
   margin-right: 8px;
 }
+.cardLink h2 {
+  font-family: var(--HeaderFont);
+}
 
 .imageContainer {
   width: 100%;

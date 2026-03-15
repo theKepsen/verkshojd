@@ -1,5 +1,10 @@
 @import url("./page-variables.css");
 
+@font-face {
+  font-family: "Bangers";
+  src: local("Bangers-Regular"), url("/fonts/Bangers/Bangers-Regular.ttf");
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,6 +13,8 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+
+  --HeaderFont: "Bangers";
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
