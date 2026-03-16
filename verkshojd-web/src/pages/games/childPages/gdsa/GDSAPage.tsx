@@ -16,7 +16,7 @@ export const GDSAPage = () => {
           height: isMobile ? "200px" : "340px",
           position: "absolute",
           top: isMobile ? "108px" : "84px",
-          left: isMobile ? "8px" : "28px",
+          left: isMobile ? "8px" : "72px",
           zIndex: 0,
         }}
         imageStyle={{ borderRadius: "8px" }}
@@ -31,7 +31,7 @@ export const GDSAPage = () => {
       </div>
 
       <span className={`${styles.description} ${styles.gameDescription}`}>
-        <h3 style={{ textAlign: "start" }}>About the game</h3>
+        <h3>About the game</h3>
         <p>
           An horizontal shmup (side scrolling shoot 'em up) game where players
           defends the planet from alien invaders. The game is inspired by
@@ -59,7 +59,7 @@ export const GDSAPage = () => {
       </span>
 
       <span className={`${styles.description} ${styles.releaseNotes}`}>
-        <h3 style={{ textAlign: "start" }}>Release Notes</h3>
+        <h3>Release Notes</h3>
         <span className={styles.markdown}>
           <Markdown>{LatestReleaseMd}</Markdown>
         </span>
