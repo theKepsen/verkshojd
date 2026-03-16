@@ -5,13 +5,13 @@ export const UpcomingReleasesMd = `
   - [ ] Level C Update
   - [✅] Yellow Enemy Update
   - [✅] Boss Time Cap (2 min)
-  - [✅] Obstacle Art Versions
+  - [✅] Astroid Obstacle Art Versions
   - [ ] Bullet Pattern Updates
   - [✅] Level A Background Concept
   - [✅] Gamepad Connection Sound
   - ? _[ ] Player hit animation_
-  - ? _[ ] Level C Background Concept?_
-  - [ ] ...
+  - ? _[ ] Enemy hit animation_
+  - ? _[ ] Upgrade drop indicator_
 
 ### Planned
 
@@ -19,17 +19,16 @@ export const UpcomingReleasesMd = `
   - ? _[ ] Level C Background Concept?_
   - [ ] Level C Improvements
   - [ ] Select Boss for Demo
+  - [ ] Update Boss for Demo
   - [ ] Snake Rework
   - [ ] ...
 
  **Alpha 0.8** : _Planned TBD_
-  - [ ] Scoring System
+  - ? _[ ] Scoring System_
   - [ ] ...
 `;
 
-export const ReleasesMd = `
-### Released
-
+export const LatestReleaseMd = `
 **Alpha 0.6.3** : _Dec 26th 2025_
 - Added player hitbox indicator
 - Performance update
@@ -39,5 +38,11 @@ export const ReleasesMd = `
 - Default keyboard map updated
 - Drone formation option
 - Level A + B updates
+`;
+
+export const ReleasesMd = `
+### Released
+
+${LatestReleaseMd}
 
 `;

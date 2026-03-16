@@ -3,6 +3,8 @@ import { PopUpImage } from "../../../../components/PopUpImage/PopUpImage";
 import styles from "./GDSAPage.module.css";
 import image1 from "/gdsa.png";
 import { useMediaQuery } from "../../../../hooks/mediaQuery";
+import Markdown from "react-markdown";
+import { LatestReleaseMd } from "./log/mdData/releasesMd";
 
 export const GDSAPage = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -28,7 +30,7 @@ export const GDSAPage = () => {
         </Link>
       </div>
 
-      <span className={styles.description}>
+      <span className={`${styles.description} ${styles.gameDescription}`}>
         <h3 style={{ textAlign: "start" }}>About the game</h3>
         <p>
           An horizontal shmup (side scrolling shoot 'em up) game where players
@@ -53,6 +55,13 @@ export const GDSAPage = () => {
           >
             Play test on itch.io
           </a>
+        </span>
+      </span>
+
+      <span className={`${styles.description} ${styles.releaseNotes}`}>
+        <h3 style={{ textAlign: "start" }}>Release Notes</h3>
+        <span className={styles.markdown}>
+          <Markdown>{LatestReleaseMd}</Markdown>
         </span>
       </span>
     </div>
