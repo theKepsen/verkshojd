@@ -5,7 +5,7 @@
   min-height: -moz-available;
   /* border: 1px solid rgba(255, 255, 255, 0.295); */
   display: grid;
-  grid-template-rows: 62px calc(100vh - 116px) 54px;
+  grid-template-rows: 72px calc(100vh - 126px) 54px;
 }
 .header {
   display: flex;
@@ -13,6 +13,7 @@
   padding: 8px 16px;
   width: -webkit-fill-available;
   overflow: hidden;
+  align-items: center;
 }
 .page {
   display: flex;

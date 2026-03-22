@@ -44,3 +44,9 @@
 .header > span:last-child {
   justify-self: end;
 }
+
+.logo {
+  height: 68px;
+  cursor: pointer;
+  opacity: 0.87;
+}

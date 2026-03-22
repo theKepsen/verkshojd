@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { PopUpImage } from "../../../../components/PopUpImage/PopUpImage";
 import styles from "./GDSAPage.module.css";
 import image1 from "/gdsa.png";
+import gdsaLogo from "/GDSAlogoWeb.png";
 import { useMediaQuery } from "../../../../hooks/mediaQuery";
 import Markdown from "react-markdown";
 import { LatestReleaseMd } from "./releases/mdData/releasesMd";
@@ -28,6 +29,19 @@ export const GDSAPage = () => {
         <Link to="/games/gdsa/log" className={styles.logLink}>
           View Log
         </Link>
+        <PopUpImage
+          containerStyle={{
+            height: isMobile ? "200px" : "340px",
+            width: isMobile ? "60vw" : "30vw",
+            position: "absolute",
+            top: isMobile ? "138px" : "24px",
+            right: isMobile ? "8px" : "8px",
+            zIndex: isMobile ? 1 : 0,
+          }}
+          imageStyle={{ borderRadius: "8px" }}
+          imageSrc={gdsaLogo}
+          altText="Gosh Darn Space Aliens Logo"
+        />
       </div>
 
       <span className={`${styles.description} ${styles.gameDescription}`}>

@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import { DropDownMenu } from "./DropDownMenu/DropDownMenu";
 import { useLocation } from "react-router-dom";
 import { useMediaQuery } from "../../../../hooks/mediaQuery";
+import logo from "/VerkhojdLogoV1Vit.png";
 
 export const Header = () => {
   const location = useLocation();
@@ -11,7 +12,12 @@ export const Header = () => {
 
   return (
     <div className={styles.header}>
-      <h1 onClick={() => navigate("/")}>Verkshöjd Studios</h1>
+      <img
+        src={logo}
+        alt="Verkshöjd Studios Logo"
+        className={styles.logo}
+        onClick={() => navigate("/")}
+      />
 
       <span className={styles.links}>
         {!isMobile && (
