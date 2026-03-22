@@ -5,6 +5,7 @@ import type React from "react";
 import { GamesPage } from "./pages/games/GamesPage";
 import { GDSAPage } from "./pages/games/childPages/gdsa/GDSAPage";
 import { GDSALogPage } from "./pages/games/childPages/gdsa/log/GDSALogPage";
+import { GDSAReleasePage } from "./pages/games/childPages/gdsa/releases/GDSAReleasePage";
 
 const router = createHashRouter([
   {
@@ -25,6 +26,10 @@ const router = createHashRouter([
       {
         path: "/games/gdsa/log",
         Component: GDSALogPage,
+      },
+      {
+        path: "/games/gdsa/releases",
+        Component: GDSAReleasePage,
       },
     ],
   },

@@ -65,6 +65,23 @@
   border-bottom: 1px solid var(--main-white);
 }
 
+.releaseNotes a {
+  color: var(--main-white);
+  font-size: 12px;
+  text-align: end;
+  padding: 4px 8px;
+  display: flex;
+  width: fit-content;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+  margin-left: auto;
+}
+.releaseNotes a:hover {
+  border-bottom: 1px solid var(--main-white);
+}
+
 .description {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 24px;

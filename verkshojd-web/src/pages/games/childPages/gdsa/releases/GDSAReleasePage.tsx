@@ -1,44 +1,19 @@
-import styles from "./GDSALogPage.module.css";
+import styles from "./GDSAReleasePage.module.css";
 import Markdown from "react-markdown";
-import { DemoTasksArtMd, DemoTasksMd } from "./mdData/demoMd";
-import { useState } from "react";
+import { ReleasesMd, UpcomingReleasesMd } from "./mdData/releasesMd";
 import { Link } from "react-router-dom";
-import { projectArtMd, projectMd } from "./mdData/projectMd";
 import { useMediaQuery } from "../../../../../hooks/mediaQuery";
 
-export const GDSALogPage = () => {
-  const [view, setView] = useState<"demo" | "project">("demo");
+export const GDSAReleasePage = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
-  const getMdContent = () => {
-    switch (view) {
-      case "demo":
-        return [DemoTasksMd, DemoTasksArtMd];
-      case "project":
-        return [projectMd, projectArtMd];
-      default:
-        return [""];
-    }
-  };
-
-  const content = getMdContent();
+  const content = [ReleasesMd, UpcomingReleasesMd];
 
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
-        <span
-          className={view === "demo" ? styles.active : ""}
-          onClick={() => setView("demo")}
-        >
-          Demo Tasks
-        </span>
-        <span
-          className={view === "project" ? styles.active : ""}
-          onClick={() => setView("project")}
-        >
-          Project Tasks
-        </span>
         <Link to="/games/gdsa">Game Page</Link>
+        <Link to="/games/gdsa/log">View Log</Link>
       </div>
 
       {content.length > 0 && (

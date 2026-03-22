@@ -4,7 +4,7 @@ import styles from "./GDSAPage.module.css";
 import image1 from "/gdsa.png";
 import { useMediaQuery } from "../../../../hooks/mediaQuery";
 import Markdown from "react-markdown";
-import { LatestReleaseMd } from "./log/mdData/releasesMd";
+import { LatestReleaseMd } from "./releases/mdData/releasesMd";
 
 export const GDSAPage = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -59,7 +59,10 @@ export const GDSAPage = () => {
       </span>
 
       <span className={`${styles.description} ${styles.releaseNotes}`}>
-        <h3>Release Notes</h3>
+        <h3>Latest Release</h3>
+        <Link to="/games/gdsa/releases" className={styles.logLink}>
+          View Releases
+        </Link>
         <span className={styles.markdown}>
           <Markdown>{LatestReleaseMd}</Markdown>
         </span>
