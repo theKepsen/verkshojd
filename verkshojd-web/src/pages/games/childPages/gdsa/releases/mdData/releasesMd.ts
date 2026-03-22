@@ -20,7 +20,7 @@ export const UpcomingReleasesMd = `
 `;
 
 export const LatestReleaseMd = `
-**Alpha 0.7** : _Planned Mar 22th 2026_
+**Alpha 0.7** : _Mar 22th 2026_
   - Level C Update
   - Yellow Enemy Update
   - Boss Time Cap (2 min)
