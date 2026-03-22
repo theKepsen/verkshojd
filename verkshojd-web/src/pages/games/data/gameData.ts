@@ -1,4 +1,4 @@
-import image from "/gdsa.png";
+import image from "/gdsa2.png";
 
 interface GameData {
   title: string;

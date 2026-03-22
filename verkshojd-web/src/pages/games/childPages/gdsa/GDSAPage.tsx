@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { PopUpImage } from "../../../../components/PopUpImage/PopUpImage";
 import styles from "./GDSAPage.module.css";
-import image1 from "/gdsa.png";
+import image1 from "/gdsa2.png";
 import gdsaLogo from "/GDSAlogoWeb.png";
 import { useMediaQuery } from "../../../../hooks/mediaQuery";
 import Markdown from "react-markdown";
