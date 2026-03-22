@@ -170,12 +170,13 @@ export const DemoTasksArtMd = `
   - [ ] Power Ups
   - [ ] Player Shots
     - [ ] Bomb
+      - [ ] Explosion
     - [ ] Missile
     - ⚠️[ ] Main Shot _(Upgrade System finish)_
     - [ ] Side Shot
   - [ ] Enemy Shots
     - [ ] Main Shot
-    - [ ] Mine
+    - [✅] Mine
   - [ ] ...
 
 ### **[ ] Visual Effects ✨**
@@ -185,10 +186,12 @@ export const DemoTasksArtMd = `
 - [ ] Smoke
   - ? _[ ] Variants?_
 - [ ] Damage / Hit Indication
-  - [ ] Player
-  - [ ] Enemy
+  - [✅] Player
+  - [✅] Enemy
   - [ ] Boss
-- [ ] Enemy Upgrade Drop Indicator
+  - [ ] Drone
+  - [ ] Environment
+- [✅] Enemy Upgrade Drop Indicator
 
 ### ⚠️ **[ ] Animation** 🎬 _(Art Assets)_
 
