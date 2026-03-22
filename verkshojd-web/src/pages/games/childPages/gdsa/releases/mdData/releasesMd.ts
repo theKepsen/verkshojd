@@ -3,15 +3,22 @@ export const UpcomingReleasesMd = `
 
 **Alpha 0.7.1** : _Planned TBD_
   - [ ] Level C Background Concept
-  - [ ] Level C Improvements
   - [ ] Select Boss for Demo
   - [ ] Update Boss for Demo
-  - [ ] Snake Rework
-  - [ ] ...
-
+  - Art / Animation V1 
+    - Enemy Shots
+      - [ ] Main Shot 
+      - [ ] Aimed Shot 
+    - Damage / Hit Indication
+      - ? _[ ] Boss_
+      - ? _[ ] Drone_
+      - ? _[ ] Solid Objects_
+  - ? _[ ] Level C Improvements_
+### ____________________________
 ### Planned
 
 **Alpha 0.7.2** : _Planned TBD_
+  - ? _[ ] Snake Rework_
   - [ ] ...
 
  **Alpha 0.8** : _Planned TBD_
@@ -37,6 +44,8 @@ export const ReleasesMd = `
 ### Released
 
 ${LatestReleaseMd}
+
+### ____________________________
 
 **Alpha 0.6.3** : _Dec 26th 2025_
 - Added player hitbox indicator

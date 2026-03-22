@@ -202,6 +202,7 @@ export const DemoTasksArtMd = `
 - [ ] Visual Effects
 - [ ] Environment
 - [ ] Power Ups, Shots, etc
+  - [✅] Mine
 
 ### **[ ] Game UI** 💻
 

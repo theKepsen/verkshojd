@@ -76,6 +76,7 @@
   border: 1px solid transparent;
   transition: border-color 0.25s;
   margin-left: auto;
+  margin-top: -32px;
 }
 .releaseNotes a:hover {
   border-bottom: 1px solid var(--main-white);
