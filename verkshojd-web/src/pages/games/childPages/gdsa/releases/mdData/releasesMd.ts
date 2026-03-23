@@ -1,15 +1,24 @@
 export const UpcomingReleasesMd = `
 ### In Progress
 
-**Alpha 0.7.1** : _Planned TBD_
-  - [ ] Level C Background Concept
+**Alpha 0.7.1** : _Planned Apr 11th 2026_
   - [ ] Select Boss for Demo
-  - [ ] Update Boss for Demo
+  - UI
+    - [ ] Color Pallet
+    - [ ] Font V2
+    - [ ] Logos
+    - [ ] Layout
+    - [ ] Settings Menu
+       - [ ] Keyboard Controls
+    - ? _[ ] Game Over_
+    - ? _[ ] Level Select_
+    - ? _[ ] Level Clear_
+    - ? _[ ] In Game Menu_
   - Art / Animation V1 
-    - Enemy Shots
-      - [ ] Main Shot 
-      - [ ] Aimed Shot 
-    - Damage / Hit Indication
+    - ? _Enemy Shots_
+      - ? _[ ] Main Shot_
+      - ? _[ ] Aimed Shot_
+    - ? _Damage / Hit Indication_
       - ? _[ ] Boss_
       - ? _[ ] Drone_
       - ? _[ ] Solid Objects_
@@ -18,6 +27,7 @@ export const UpcomingReleasesMd = `
 ### Planned
 
 **Alpha 0.7.2** : _Planned TBD_
+  - ? _[ ] Level C Background Concept_
   - ? _[ ] Snake Rework_
   - [ ] ...
 
