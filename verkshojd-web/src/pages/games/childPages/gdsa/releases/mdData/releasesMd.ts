@@ -1,19 +1,16 @@
 export const UpcomingReleasesMd = `
 ### In Progress
 
-**Alpha 0.7.1** : _Planned Apr 11th 2026_
+**Alpha 0.7.1** : _Planned Apr 12th 2026_
   - [ ] Select Boss for Demo
-  - UI
-    - [ ] Color Pallet
+  - UI Updates
     - [ ] Font V2
-    - [ ] Logos
-    - [ ] Layout
+    - [✅]] Logos
     - [ ] Settings Menu
        - [ ] Keyboard Controls
+    - [✅]] In Game Menu
     - ? _[ ] Game Over_
-    - ? _[ ] Level Select_
     - ? _[ ] Level Clear_
-    - ? _[ ] In Game Menu_
   - Art / Animation V1 
     - ? _Enemy Shots_
       - ? _[ ] Main Shot_
