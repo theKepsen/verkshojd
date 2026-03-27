@@ -6,8 +6,8 @@ export const UpcomingReleasesMd = `
   - UI Updates
     - [ ] Font V2
     - [✅] Logos
-    - [ ] Settings Menu
-       - [ ] Keyboard Controls
+    - [✅] Settings Menu
+       - [✅] Keyboard Controls
     - [✅] In Game Menu
     - ? _[ ] Game Over_
     - ? _[ ] Level Clear_
