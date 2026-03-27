@@ -5,10 +5,10 @@ export const UpcomingReleasesMd = `
   - [ ] Select Boss for Demo
   - UI Updates
     - [ ] Font V2
-    - [✅]] Logos
+    - [✅] Logos
     - [ ] Settings Menu
        - [ ] Keyboard Controls
-    - [✅]] In Game Menu
+    - [✅] In Game Menu
     - ? _[ ] Game Over_
     - ? _[ ] Level Clear_
   - Art / Animation V1 
