@@ -42,26 +42,27 @@ export const DemoTasksMd = `
 ### **[ ] Enemies** 🛸
 
 - [ ] Fine Tune Settings
-- [ ] Small Pleb
+- [ ] Small Pleb _(pink alien)_
   - [ ] Art
-- [ ] Pleb
+- [ ] Pleb _(Green window ship)_
   - [ ] Art
 - [ ] Snake
-  - ? _[ ] Rework_
-  - [ ] Attack
+  - [ ] Rework
+    - [ ] Attack is shitty
+    - ? _[ ] Add different variations?_
   - [ ] Art
-- [ ] Pleb Deluxe
+- [ ] Pleb Deluxe _(Yellow window ship with big aimed shot)_
   - [ ] Art
-- [ ] Pleb Mine
+- [ ] Pleb Mine _(Yellow ship that spawns yellow mines)_
   - [✅] Try out movement patterns on Mines
   - [✅] Update Mine Spawning
     - [ ] Fix for Level B
   - [ ] Art
-- [ ] Pleb Burst
+- [ ] Pleb Burst _(Red window ship, bigger. wiggle, burst and spin shots)_
   - [ ] Art
   - [ ] Bullet Patters
-- [ ] Player Killer
-- ? _[ ] Lurker_
+- [ ] Player Killer _(Spawns when boss timer runs out)_
+- ? _[ ] Lurker_ (Purple popcorn enemy)
 
 ### **[ ] Obstacles** 🚧
 
@@ -105,14 +106,12 @@ export const DemoTasksMd = `
   - [ ] Settings
   - [ ] Retry
   - [ ] Main Menu
-  - [ ] Pause Game with keyboard control
 - [ ] Menu
   - [✅] Demo Menu
   - [ ] Settings Menu
     - [ ] Keyboard Controls
     - [ ] Music / SFX Volume Sliders
     - [✅] Hide 2 Player
-    - [ ] Drone Formation
 
 ### **[ ] Fixes** 🔨
 
@@ -274,4 +273,115 @@ export const DemoTasksArtMd = `
   - [✅] Level Duration: 2:30
   - [✅] Boss Duration: _(2 min)_
   - [✅] Total Duration: 4:40
+`;
+
+export const playTestDemoMd = `
+### **Level C** 🪐
+
+- [ ] Background V1
+
+### **System**
+
+- [ ] Upgrade System Main Shot _(Size and shape)_
+- [ ] ...
+
+### **Game Object Art V1** 🎨
+
+- [ ] Assets Resolution Rules
+- ⚠️[ ] Player _(Hit-box & Sprite Size)_
+- [ ] Enemies
+  - [ ] Small Pleb _(pink alien)_
+  - [ ] Pleb _(Green window ship)_
+  - [ ] Snake
+  - [ ] Pleb Deluxe _(Yellow window ship with big aimed shot)_
+  - [ ] Pleb Mine _(Yellow ship that spawns yellow mines)_
+  - [ ] Player Killer _(Spawns when boss timer runs out)_
+  - [ ] Pleb Burst _(Red window ship, bigger. wiggle, burst and spin shots)_
+    - ? _[ ] Split to Multiple_
+- [ ] Boss
+- [ ] Environment
+  - [ ] Astroid
+    - ? _[ ] Variants (Space Junk, etc.)_
+  - [ ] Satellite Orbit
+  - [ ] Falling Ship
+  - [ ] ...
+- [ ] Other
+  - [ ] Power Ups
+    - [ ] Upgrade Drop
+    - [ ] Health Drop _(Keep?)_
+    - [ ] Bomb Refill
+  - [ ] Player Shots
+    - [ ] Bomb
+      - [ ] Explosion _(update current animation)_
+    - [ ] Missile
+    - ⚠️[ ] Main Shot _(Upgrade finish)_
+    - [ ] Side Shot
+  - [ ] Enemy Shots
+    - [ ] Main Shot
+    - [ ] Aimed Shot
+    - [ ] Missile
+    - [ ] Laser
+    - [✅] Mine
+  - [ ] ...
+
+### **Visual Effects ✨**
+
+- [ ] Explosion
+  - ? _[ ] Variants?_
+- [ ] Smoke
+  - ? _[ ] Variants?_
+- [ ] Damage / Hit Indication
+  - [✅] Player
+  - [✅] Enemy
+  - [ ] Boss
+  - [ ] Drone 
+  - [ ] Solid Objects
+- [✅] Enemy Upgrade Drop Indicator
+
+### ⚠️ **Animation** 🎬 _(Art Assets)_
+
+- [ ] Player
+  - [ ] Spawn after death
+- [ ] Enemies
+- [ ] Boss
+- [ ] Visual Effects
+- [ ] Environment
+- [ ] Power Ups, Shots, etc
+  - [✅] Mine
+
+### **Game UI V1** 💻
+
+- [ ] Color Pallet
+- [ ] Font V2
+  - [ ] Colors
+- [ ] Logo V1
+  - [ ] Game
+  - [ ] Studio
+- ⚠️[ ] Layout _(Color Pallet)_
+  - ⚠️[ ] Splash Screen _(Logos)_
+  - [ ] Menus
+    - [ ] Start (Demo)
+    - [ ] Settings
+  - [ ] Game Over
+  - [ ] Level Clear
+- [ ] In Game Overlay
+- [ ] In Game Menu
+- [ ] Settings Menu
+  - [ ] Keyboard Controls
+
+### **Sound** 🔊
+
+- [ ] Volume Balance
+- [ ] Music
+  - [ ] Level C
+  - [ ] Level C Boss
+- [ ] SFX
+  - [ ] Explosion
+  - [ ] Hit
+  - [ ] Spawn
+  - [ ] Shot
+  - [ ] Menu
+  - [ ] Controller Connected
+  - [ ] Power Up
+  - [ ] ...
 `;

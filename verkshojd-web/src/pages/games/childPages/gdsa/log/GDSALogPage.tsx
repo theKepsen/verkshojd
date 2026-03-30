@@ -1,13 +1,13 @@
 import styles from "./GDSALogPage.module.css";
 import Markdown from "react-markdown";
-import { DemoTasksArtMd, DemoTasksMd } from "./mdData/demoMd";
+import { DemoTasksArtMd, DemoTasksMd, playTestDemoMd } from "./mdData/demoMd";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { projectArtMd, projectMd } from "./mdData/projectMd";
 import { useMediaQuery } from "../../../../../hooks/mediaQuery";
 
 export const GDSALogPage = () => {
-  const [view, setView] = useState<"demo" | "project">("demo");
+  const [view, setView] = useState<"playTest" | "demo" | "project">("playTest");
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const getMdContent = () => {
@@ -16,6 +16,8 @@ export const GDSALogPage = () => {
         return [DemoTasksMd, DemoTasksArtMd];
       case "project":
         return [projectMd, projectArtMd];
+      case "playTest":
+        return [playTestDemoMd];
       default:
         return [""];
     }
@@ -26,6 +28,12 @@ export const GDSALogPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
+        <span
+          className={view === "playTest" ? styles.active : ""}
+          onClick={() => setView("playTest")}
+        >
+          Play Test Demo
+        </span>
         <span
           className={view === "demo" ? styles.active : ""}
           onClick={() => setView("demo")}
@@ -38,6 +46,7 @@ export const GDSALogPage = () => {
         >
           Project Tasks
         </span>
+
         <Link to="/games/gdsa">Game Page</Link>
       </div>
 

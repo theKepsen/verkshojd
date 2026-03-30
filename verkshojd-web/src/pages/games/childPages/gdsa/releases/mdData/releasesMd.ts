@@ -6,7 +6,7 @@ export const UpcomingReleasesMd = `
     - [ ] Update Boss A (for better base on decision)
   - UI Updates
     - [✅] Font V2
-    - [✅] Logos
+    - [✅] Logos V1
     - [✅] Settings Menu
        - [✅] Keyboard Controls
     - [✅] In Game Menu
