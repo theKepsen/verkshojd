@@ -30,12 +30,14 @@ export const DemoTasksMd = `
 ### **[ ] Boss C or A?** 🐲
 
 - [ ] Attack / Movement Patterns
-- [ ] Boss C Spawn Corner Flash
+- [✅] Boss C Spawn Corner Flash
 - [ ] Rank Effects
 - [✅] Time Limit Behavior
 - [ ] Challenge
 - [ ] Art
 - [ ] Level Speed
+- [ ] Player Spawn Points
+- [ ] Player to close to boss behavior
 
 ### **[ ] Enemies** 🛸
 
@@ -139,8 +141,6 @@ export const DemoTasksMd = `
     - [ ] Falling Ships
 - [ ] Rank System
   - [ ] Boss HP
-
-
 `;
 
 export const DemoTasksArtMd = `
@@ -197,6 +197,7 @@ export const DemoTasksArtMd = `
 
 - [ ] Common Animations Loader
 - [ ] Player
+  - [ ] Spawn after death
 - [ ] Enemies
 - [ ] Boss
 - [ ] Visual Effects
@@ -208,6 +209,8 @@ export const DemoTasksArtMd = `
 
 - [ ] Color Pallet
 - [ ] Font
+  - [ ] Font V2
+  - [ ] Font V3
   - [ ] Colors
 - [ ] Logo
   - [ ] Game

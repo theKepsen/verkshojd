@@ -3,14 +3,14 @@ export const UpcomingReleasesMd = `
 
 **Alpha 0.7.1** : _Planned Apr 12th 2026_
   - [ ] Select Boss for Demo
+    - [ ] Update Boss A (for better base on decision)
   - UI Updates
-    - [ ] Font V2
+    - [✅] Font V2
     - [✅] Logos
     - [✅] Settings Menu
        - [✅] Keyboard Controls
     - [✅] In Game Menu
-    - ? _[ ] Game Over_
-    - ? _[ ] Level Clear_
+    - [ ] Menu layout
   - Art / Animation V1 
     - ? _Enemy Shots_
       - ? _[ ] Main Shot_
@@ -24,8 +24,15 @@ export const UpcomingReleasesMd = `
 ### Planned
 
 **Alpha 0.7.2** : _Planned TBD_
+  - [ ] Boss Update
+    - [ ] ...
   - ? _[ ] Level C Background Concept_
   - ? _[ ] Snake Rework_
+  - ? _[ ] Game Over Screen_
+  - ? _[ ] Level Clear Screen_
+  - [ ] ...
+
+**Alpha 0.7.3** : _Planned TBD_
   - [ ] ...
 
  **Alpha 0.8** : _Planned TBD_
