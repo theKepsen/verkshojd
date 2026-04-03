@@ -1,36 +1,26 @@
 export const UpcomingReleasesMd = `
 ### In Progress
 
-**Alpha 0.7.1** : _Planned Apr 12th 2026_
-  - [ ] Select Boss for Demo
-    - [ ] Update Boss A (for better base on decision)
-  - UI Updates
-    - [✅] Font V2
-    - [✅] Logos V1
-    - [✅] Settings Menu
-       - [✅] Keyboard Controls
-    - [✅] In Game Menu
-    - [ ] Menu layout
-  - Art / Animation V1 
-    - ? _Enemy Shots_
-      - ? _[ ] Main Shot_
-      - ? _[ ] Aimed Shot_
-    - ? _Damage / Hit Indication_
-      - ? _[ ] Boss_
-      - ? _[ ] Drone_
-      - ? _[ ] Solid Objects_
-  - ? _[ ] Level C Improvements_
+**Alpha 0.7.2** : _Planned TBD_
+- [ ] Select Boss for Demo
+  - [ ] Boss Update
+- ? _[ ] Level C Background Concept_
+- ? _[ ] Snake Rework_
+- ? _[ ] Game Over Screen_
+- ? _[ ] Level Clear Screen_
+- Art / Animation V1 
+  - ? _Enemy Shots_
+    - ? _[ ] Main Shot_
+    - ? _[ ] Aimed Shot_
+  - ? _Damage / Hit Indication_
+    - ? _[ ] Boss_
+    - ? _[ ] Drone_
+    - ? _[ ] Solid Objects_
+- ? _[ ] Level C Improvements_
+  
+  
 ### ____________________________
 ### Planned
-
-**Alpha 0.7.2** : _Planned TBD_
-  - [ ] Boss Update
-    - [ ] ...
-  - ? _[ ] Level C Background Concept_
-  - ? _[ ] Snake Rework_
-  - ? _[ ] Game Over Screen_
-  - ? _[ ] Level Clear Screen_
-  - [ ] ...
 
 **Alpha 0.7.3** : _Planned TBD_
   - [ ] ...
@@ -41,6 +31,23 @@ export const UpcomingReleasesMd = `
 `;
 
 export const LatestReleaseMd = `
+**Alpha 0.7.1** : _Apr 3de 2026_
+  - UI Updates
+    - Font V2
+    - Logos V1
+    - Settings Menu
+       - Keyboard Controls
+    - In Game Menu
+    - Menu layout
+`;
+
+export const ReleasesMd = `
+### Released
+
+${LatestReleaseMd}
+
+### ____________________________
+
 **Alpha 0.7** : _Mar 22th 2026_
   - Level C Update
   - Yellow Enemy Update
@@ -52,14 +59,6 @@ export const LatestReleaseMd = `
   - Player hit animation
   - Enemy hit animation
   - Upgrade drop indicator
-`;
-
-export const ReleasesMd = `
-### Released
-
-${LatestReleaseMd}
-
-### ____________________________
 
 **Alpha 0.6.3** : _Dec 26th 2025_
 - Added player hitbox indicator
