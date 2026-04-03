@@ -1,7 +1,7 @@
 export const UpcomingReleasesMd = `
 ### In Progress
 
-**Alpha 0.7.2** : _Planned TBD_
+**Alpha 0.7.2** : _Planned end of Apr / early May 2026_
 - [ ] Select Boss for Demo
   - [ ] Boss Update
 - ? _[ ] Level C Background Concept_
